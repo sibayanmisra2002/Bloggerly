@@ -1,12 +1,18 @@
 import "./write.css";
 // import Sidebar from "../../components/Sidebar/Sidebar";
 
+import React, { useState, useRef} from 'react';
+import JoditEditor from "jodit-react"
+import { Card,Label} from "reactstrap"
+
 function Write() {
+  const editor = useRef(null);
+	const [content, setContent] = useState('');
   return (
     <div className="write">
       <img
         className="writeImg"
-        src="https://wallpaper.dog/large/13144.jpg"
+        src="https://images.unsplash.com/photo-1666694421187-75957423ee77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
         alt=""
       />
       <form className="writeForm">
@@ -22,19 +28,19 @@ function Write() {
             autoFocus={true}
           />
         </div>
-        <div className="writeFormGroup">
-          <textarea
-            className="writeInput writeText"
-            placeholder="Tell your story..."
-            type="text"
-            autoFocus={true}
-          />
-        </div>
-        <button className="writeSubmit" type="submit">
+        <div className="writeText">
+          <Label for="content" className="fontBlog"><i class="fa-solid fa-pen-to-square"></i>&nbsp;Write your blog below:</Label>
+          <JoditEditor
+            ref={editor}
+            value={content}
+            onBlur={newContent => setContent(newContent)}
+            onChange={newContent => {}} />
+          <button className="writeSubmit" type="submit">
           Publish
         </button>
+        </div>
       </form>
-    </div>
+      </div> 
   );
 }
 

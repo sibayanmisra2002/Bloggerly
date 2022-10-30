@@ -1,23 +1,50 @@
 .write {
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 1200px; */
+    /* justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center; */
   }
   
   .writeImg {
-    margin-left: 150px;
-    width: 75vw;
-    height: 275px;
+    /* margin-left: 130px; */
+    /* flex: 12; */
+    
+    height: 300px;
+    width: 1000px;
     border-radius: 10px;
     object-fit: cover;
   }
   
   .writeForm {
+    margin-top: 10px;
+    margin-bottom: 75px;
     position: relative;
+    /* margin-left: 250px; */
   }
   
   .writeFormGroup {
-    margin-left: 150px;
+    /* margin-left: 100px; */
+    /* width: 80vh; */
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
+  }
+
+  .fontBlog{
+    font-size: 25px;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.4rem;
+    margin-left: 7px;
+    font-weight: lighter;
+    font-family: 'Teko', sans-serif;
   }
   
   .writeIcon {
@@ -37,7 +64,8 @@
     font-size: 30px;
     border: none;
     padding: 20px;
-    width: 70vw;
+    width: 935px;
+    /* width: 18rem; */
   }
   
   .writeInput::placeholder {
@@ -50,18 +78,21 @@
   }
   
   .writeText {
-    width: 70vw;
-    height: 100vh;
+    /* margin-left: 10rem; */
+    /* flex: 12; */
+    /* margin-top: 5rem; */
+    /* width: 120vh; */
+    /* height: 350px; */
     font-family: inherit;
-    font-size: 20px;
+    font-size: 1rem;
   }
   
   .writeSubmit {
     position: absolute;
     top: 20px;
-    right: 200px;
+    right: 25px;
     color: rgb(233, 231, 231);
-    background-color: #968888;
+    background-color: #b77f72;
     padding: 10px;
     border: none;
     border-radius: 10px;
