@@ -3,17 +3,20 @@ import "./post.css";
 function Post() {
   return (
     <div className="post">
-      <div className="postInfo">
+      <div className="postInfoImageContainer">
         <img
           src="https://wallpaperaccess.com/full/3379258.jpg"
           alt=""
           className="postImg"
         />
+        <figcaption className="postInfoImageCaption">Author</figcaption>
       </div>
       <div className="postInfo">
         <div>
-          <span className="postCat">Tech</span>
-          <span className="postCat">Fun</span>
+        <div className="postCardFeatures">
+          <span className="postCardFeatures__tag">Tech</span>
+          <span className="postCardFeatures__time">8mins</span>
+        </div>
 
           <div className="postTitle">Loremaf</div>
           <div className="postDate">1 hour ago</div>

@@ -1,66 +1,111 @@
 .post {
-    width: 90%;
-    margin: 0px 25px 40px 25px;
-    padding: 15px;
-    display: flex;
-    background-color: #fdfbfb;
-    align-items: center;
-  }
-  
-  .postImg {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 25px;
-  }
-  
-  .postInfo {
-    display: flex;
-    flex-direction:row ;
-    align-items: center;
+  width: 90%;
+  margin: 0px 25px 40px 0px;
+  padding: 5px 15px;
+  display: flex;
+  background-color: #fdfbfb;
+  align-items: center;
+}
 
-  }
+.postInfoImageContainer {
+  position: relative;
+  clip-path: circle(21.3% at 50% 50%);
+  transform: translate(-23%, 0%);
+  transition: all 0.4s;
+}
+.postImg {
+  max-width: 100%;
+  transform: scale(1.5);
+  transition: all 0.4s;
+}
 
-  
-  .postCat {
-    font-family: "Varela Round", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 11px;
-    color: #be9656;
-    line-height: 19px;
-    margin-top: 15px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  .postTitle {
-    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-    margin-top: 15px;
-    cursor: pointer;
-  }
-  
-  .postDate {
-    font-family: "Lora", serif;
-    font-style: italic;
-    font-size: 13px;
-    font-weight: 400;
-    color: #999999;
-    margin-top: 3px;
-  }
-  
-  .postDesc {
-    font-family: "Varela Round", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #444444;
-    margin-top: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-  }
+.postInfoImageCaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  opacity: 0;
+  text-align: center;
+  transition: all 0.7s ease-in-out;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -15rem;
+}
+
+.postCat {
+  font-weight: 400;
+  font-size: 11px;
+  color: #be9656;
+  line-height: 19px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.postCardFeatures {
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  margin: 1rem 0px 3rem 0px;
+  border: 3.5px solid black;
+  border-radius: 20px;
+  padding: 0.3rem 0.2rem;
+  width: 30%;
+}
+.postCardFeatures__tag {
+  padding: 0px 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: 3.5px solid black;
+  margin: 0px 0.4rem;
+}
+.postCardFeatures__time {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+.postTitle {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.postDate {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 13px;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 3px;
+}
+
+.postDesc {
+  font-family: "Varela Round", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #444444;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* Animations and Hover effect */
+
+.postInfoImageContainer:hover .postInfoImageCaption {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.postInfoImageContainer:hover .postImg {
+  transform: scale(1);
+  filter: blur(3px) brightness(70%);
+}
