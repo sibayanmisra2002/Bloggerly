@@ -7,6 +7,7 @@ import Blog from "./pages/Blog/Blog";
 import Write from "./pages/Write/Write";
 import Setting from "./pages/Setting/Setting";
 import Register from "./pages/Register/Register";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/write" element={user ? <Write /> : <Register />} />
         <Route path="/post/:postId" element={<Blog />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
