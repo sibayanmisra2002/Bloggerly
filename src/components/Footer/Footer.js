@@ -2,7 +2,7 @@ import React from 'react'
  import './Footer.css'
 
 
-export const Footer = () => { 
+ const Footer = () => { 
     return (
         <footer className="footer">
             <div className="container">
@@ -35,7 +35,7 @@ export const Footer = () => {
                     <div className="footer-col">
                         <h4> Blogs</h4>
                         <div className="content">
-                            <div className="box1"><img src="https://blog.marketo.com/content/uploads/2016/06/Get-Your-Blog-On-4-Steps-to-Blogging-Success.jpg" alt="" />
+                            <div className="box1"><img src="https://blog.marketo.com/content/uploads/2016/06/Get-Your-Blog-On-4-Steps-to-Blogging-Success.jpg" alt="" style={{width:"50px", height:"50px"}} />
 
                             </div>
                           
@@ -68,3 +68,5 @@ export const Footer = () => {
        
     )
 }
+
+export default Footer;

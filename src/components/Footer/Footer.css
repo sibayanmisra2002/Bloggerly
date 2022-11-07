@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
+	
+	
+
+footer{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
-}
-*{
-	margin:0;
-	padding:0;
+	/* margin:0; */
+	/* padding:0; */
 	box-sizing: border-box;
 }
+
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -15,6 +17,7 @@ body{
 .row{
 	display: flex;
 	flex-wrap: wrap;
+	padding: 40px;
 }
 ul{
 	list-style: none;
@@ -25,7 +28,7 @@ ul{
 }
 .footer-col{
    width: 25%;
-   padding: 0 15px;
+   padding: 0 0px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -97,8 +100,10 @@ ul{
 }
 .col-sm{
 	height: 10px;
-	width: 10px;
+	width: 100%;
+	/* padding: 20px; */
 	color: #070606;
+
 }
 .content{
 	display: flex;
@@ -111,10 +116,4 @@ ul{
 	height: 60px;
 	width: 60px;
 	color: #e91e63;
-}
-
-
-img{
-	height: 50px;
-	width: 50px;
 }
