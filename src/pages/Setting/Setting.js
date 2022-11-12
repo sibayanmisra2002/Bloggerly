@@ -14,7 +14,7 @@ function Setting() {
             <label>Profile Picture</label>
             <div className="settingsPP">
               <img
-                src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_auto,w_1400/fl_lossy,pg_1/pxzr4hqfklhsuhfda55w/andrew-tate?fimg-ssr-default"
+                src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
                 alt=""
               />
               <label htmlFor="fileInput">
