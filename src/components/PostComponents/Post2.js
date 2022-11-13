@@ -14,8 +14,8 @@ function Post() {
       <div className="postInfo">
         <div>
         <div className="postCardFeatures">
-          <span className="postCardFeatures__tag">Tech</span>
-          <span className="postCardFeatures__time">3mins</span>
+          <span className="postCardFeatures__tag">Art</span>
+          <span className="postCardFeatures__time">7mins</span>
         </div>
 
           <div className="postTitle">12 Powerful Design Tools for Front-End Developers</div>
